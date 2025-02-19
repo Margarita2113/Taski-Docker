@@ -1,12 +1,11 @@
-from http import HTTPStatus
-
+from http import HTTPStatus  # Импортирование статусов HTTP
 from django.test import Client, TestCase
-
 from api import models
 
 
 class TaskiAPITestCase(TestCase):
     def setUp(self):
+        """Метод, выполняемый перед каждым тестом."""
         self.guest_client = Client()
 
     def test_list_exists(self):
