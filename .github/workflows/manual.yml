@@ -129,6 +129,6 @@ jobs:
       - name: Push to DockerHub
         uses: docker/build-push-action@v4
         with:
-          context: ./gateway/
+          context: ./backend/
           push: true
           tags: fuller2113/taski_gateway:latest
